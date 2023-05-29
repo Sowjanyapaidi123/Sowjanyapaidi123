@@ -1,0 +1,33 @@
+#include<stdio.h>
+
+void insertion(int arr[], int pos, int ele, int size);
+int main()
+{
+int arr[20],n,pos,I,ele;
+    printf("enter n");
+    scanf("%d",&n);
+    printf("enter array elements");
+    for(I=0;I<n;I++)
+    scanf("%d",&arr[I]);
+    printf("enter pos");
+    scanf("%d",&pos);
+    printf("enter ele");
+   scanf("%d",&ele);
+
+insertion(arr,pos,ele,n);
+    printf("\nafter insertion");
+    for(I=0;I<n+1;I++)
+    printf("%d",arr[I]);
+}
+
+void insertion(int arr[], int pos, int ele, int size)
+{
+int I;
+I=size-1;
+while(I>=pos)
+{
+arr[I+1]=arr[I];
+I--;
+}
+arr[pos]=ele;
+}
