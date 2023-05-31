@@ -1,0 +1,67 @@
+#include<stdio.h>
+
+int main()
+
+{
+
+int arr[20],n,len,I,ele;
+
+void binarysearch(int [],int, int);
+
+    printf("enter n");
+
+    scanf("%d",&n);
+
+    printf("enter array elements");
+
+    for(I=0;I<n;I++)
+
+    scanf("%d",&arr[I]);
+
+    printf("enter ele");
+
+   scanf("%d",&ele);
+
+binarysearch (arr,ele,n);
+
+   
+
+}
+
+void binarysearch (int arr[], int ele, int n)
+
+{
+
+int upinx,lowinx,mid;
+
+lowinx=0;
+
+upinx=n-1;
+
+while(lowinx<=upinx)
+
+{
+
+mid=upinx+lowinx/2;
+
+if(arr[mid]==ele)
+
+{
+
+printf("element found at loc %d",mid);
+
+break;
+
+}
+
+if(arr[mid]>ele)
+
+upinx=mid-1;
+
+else
+
+lowinx=mid+1;
+
+}
+
+}
