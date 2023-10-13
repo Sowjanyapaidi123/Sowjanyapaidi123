@@ -1,0 +1,26 @@
+t=1500
+dress=2000
+bag=3000
+cname=input('enter customer name:')
+cphno=input('enter customer phone no:')
+nt=int(input('Enter no of tops'))
+ndress=int(input('Enter no of dress'))
+nbag=int(input('Enter no of bags'))
+bill=(t*nt)+(dress*ndress)+(bag*nbag)
+if bill>=1000:
+    disc=bill*10/100
+elif bill>=500:
+    disc=bill*8/100
+elif bill>=300:
+    disc=bill*5/100
+elif bill>=200:
+    disc=bill*3/100
+else:
+    disc=0
+price=bill-disc
+gst=price*12/100
+amount=price+gst
+print('custno:',cphno)
+print('cutname:',cname)
+print('bill to be paid',amount)
+print('Thank you!Visit Again')
