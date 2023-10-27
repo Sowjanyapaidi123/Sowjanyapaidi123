@@ -1,0 +1,11 @@
+n=int(input('enter no'))
+m=n
+res=0
+while n != 0:
+    r=n % 10
+    res=(r * r * r) + res
+    n = n // 10
+if res == m:
+ print('Armstrong')
+else:
+ print('Not Armstrong ')
