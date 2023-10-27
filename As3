@@ -1,0 +1,8 @@
+for x in range(3):
+ int a,b,c=map(int,input().split())
+if (a >= b) and (a >= c):
+ print('A is Big')
+elif (b >= a) and (b >= c):
+ print('B is Big')
+else:
+ print('C is Big')
