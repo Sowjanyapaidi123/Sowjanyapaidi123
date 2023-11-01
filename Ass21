@@ -1,0 +1,9 @@
+n=int(input())
+l=[]
+for i in range(n):
+    a=int(input())
+    l.append(a)
+p=int(input())
+x=int(input())
+l[p]=x
+print(l)
